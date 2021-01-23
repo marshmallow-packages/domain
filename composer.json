@@ -1,0 +1,45 @@
+{
+    "name": "marshmallow/domain",
+    "description": "Sweet helpers for checking if domains are available via command line",
+    "keywords": ["marshmallow", "deployer", "laravel deployer"],
+    "homepage": "https://marshmallow.dev/",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stef",
+            "email": "stef@marshmallow.dev",
+            "homepage": "https://marshmallow.dev",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "stef@marshmallow.dev"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.4",
+        "illuminate/database": "^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.3",
+        "orchestra/testbench": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {"Marshmallow\\Domain\\": "src"}
+    },
+    "autoload-dev": {
+        "psr-4": {"Marshmallow\\Domain\\Tests\\": "tests"}
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --coverage-text"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Marshmallow\\Domain\\ServiceProvider"
+            ]
+        }
+    }
+}
