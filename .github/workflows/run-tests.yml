@@ -3,9 +3,9 @@ name: run-tests
 
 on:
   push:
-    branches: [ main ]
+    branches: [ wip ]
   pull_request:
-    branches: [ main ]
+    branches: [ wip ]
 
 jobs:
   test:
